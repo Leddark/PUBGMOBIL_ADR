@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'wer32#$21%2e4e3dsfsa$7%es1sev#t$@0yk*d8jwl6i$5a0$brls^9j0ehh^vt+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
